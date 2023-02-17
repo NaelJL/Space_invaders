@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'BaksoSapi';
+    src: url('fonts/BaksoSapi.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Louis George Cafe';
+    src: url('fonts/Louis\ George\ Cafe.ttf') format('truetype');
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+    color: rgb(232, 232, 232);
+    font-family: 'Louis George Cafe';
+}
+.consignes {
+    text-align: center;
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+}
+button {
+    font-family: 'Louis George Cafe';
+    border-radius: 5px;
+    background-color: rgb(226, 225, 225);
+    margin: 0px auto;
+}
+button:hover {
+    cursor: pointer;
+    background-color: silver;
+}
+.restart-button {
+    display: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.other-starts {
+    text-decoration: none;
+    color: black;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    background: url('images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
+    animation: background-moving 15s linear infinite;
+}
+@keyframes background-moving {
+    from {
+        background-position-y: 0px;
+    } to {
+        background-position-y: 416px;
+    }
+}
+.grid div {
+    width: 25px;
+    height: 25px;
+}
+.shooter {
+    background: url('images/rocket.png');
+    background-position: center;
+    background-size: contain;
+}
+.alien {
+    background: url('images/ufo_1.png');
+    background-position: center;
+    background-size: contain;
+}
+.boom {
+    background-color: red;
+}
+.laser {
+    background-color: orange;
+}
+h3 {
+    text-align: center;
+    margin: 30px 0px;
+    font-family: 'BaksoSapi';
+    font-size: 20px;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+.bio-link {
+    text-decoration: none;
+    color: rgb(232, 232, 232);
+    font-family: 'BaksoSapi';
+    font-size: 18px;
+}
+.bio-link:hover {
+    text-shadow: 1px 2px 2px white;
+}
